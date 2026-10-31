@@ -1,0 +1,28 @@
+NÖVEKEDÉSI PÁLYÁK – INDÍTÁS SAJÁT GÉPEN
+
+1. Csomagold ki a ZIP-et egy saját mappába.
+2. Telepítsd a Node.js aktuális LTS verzióját: https://nodejs.org
+   Minimum: Node.js 22.12.
+3. Nyiss terminált a kicsomagolt novekedesi-palyak mappában,
+   ahol a package.json fájl található.
+   Windows: a Fájlkezelő címsorába írd: cmd, majd Enter.
+4. Futtasd egymás után:
+
+   npm ci
+   npm run dev -- --host 127.0.0.1
+
+5. Nyisd meg a terminálban kiírt címet a böngészőben.
+   Általában: http://localhost:5173
+   A terminált hagyd nyitva. Leállítás: Ctrl+C.
+
+Az első telepítés internetkapcsolatot igényel. Az alkalmazás
+számításai helyben futnak, nem igényelnek GitHubot vagy API-kulcsot.
+Az index.html dupla kattintással nem indítható: a fenti parancsokat használd.
+A beállításokat bezárás előtt exportáld JSON-ba a felületen.
+
+Ellenőrzések (nem szükségesek az indításhoz):
+   npm test
+   npm run build
+
+További leírás: README.md, MODEL.md, METHODOLOGY.md, VALIDATION.md.
+A csomag nem tartalmazza a gépfüggő node_modules és .git mappákat.
